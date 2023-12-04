@@ -1,0 +1,77 @@
+*{
+	direction: rtl;
+}
+
+.header .header-personal ,.header .header-info{
+	float: left !important;
+}
+.header nav{
+	float: right !important;
+	margin: 0 20% 0  0 !important;
+}
+.header .header-logo{
+	right: 2% ;
+}
+.getspec .getspec-cont form input[type=submit],.footer-info form input[type=submit]{
+
+
+	left: 3px;
+	right: unset;
+}
+.getspec .getspec-cont form input[type=text],.footer-info form input[type=text]  {
+
+    padding: 0 15px 0 180px;
+}
+.botarticle .botarticle-cont .botarticle-more,.footer-menu{
+	float: right;
+}
+
+
+.getspec .getspec-img{
+	margin: 0 6% 0 0;
+	right:  50%;
+
+
+}
+.cont-sections{
+	left: 10.5%;
+	right: unset;
+}
+.section-top .section-menu-btn{
+	right: -1px;
+	left: unset;
+}
+.section-top .section-sort,.section-top .section-shipping,.section-top .section-prices{
+	float: left;
+}
+.section-list .sectls-img{
+	right: 0;
+	left: unset;
+}
+.section-list .sectls {
+    margin: 0 0 26px;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    padding: 0 170px 0 0;
+    z-index: 2;
+    box-shadow: inset 0 -4px 0px 0px #dfe2f0, 0 10px 20px 0px rgba(192,196,215,0.25);
+}
+.section-list .sectls-ttl-wrap{
+	float: right;
+	padding: 0 2% 18px 5px;
+}
+.section-list .sectls-price-wrap,.section-list .sectls-qnt-wrap,.section-list .sectls-total-wrap ,.section-list .sectls-rating-wrap ,.section-list .sectls-id{
+	float: right;
+}
+.section-list .sectls-add,.section-list .sectls-favorites,.section-list .sectls-compare{
+	float: left;
+}
+.aboutus-cont{
+	float: left;
+}
+.aboutus-img{
+	right: 0;
+	left: unset;
+}
+.aboutus .flex-control-nav{text-align: left;}
