@@ -1,7 +1,22 @@
 "use strict";
 
 $(document).ready(function () {
+	var scrollButton = document.getElementById("scroll-to-top");
 
+    // Show or hide the button based on the scroll position
+    window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollButton.style.display = "block";
+        } else {
+            scrollButton.style.display = "none";
+        }
+    };
+
+    // Scroll to the top when the button is clicked
+    scrollButton.onclick = function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    };
 	// Modal Form
 	$('.callback').fancybox({
 		padding: 0,
@@ -456,6 +471,36 @@ $(window).load(function(){
 		    sync: "#prod-thumbs",
 		});
 	}
+
+
+
+	if ($('#feedback-slider').length > 0) {
+		$("#feedback-thumbs").flexslider({
+		    animation: "slide",
+		    controlNav: false,
+		    animationLoop: false,
+		    slideshow: false,
+		    itemWidth: 97,
+		    itemMargin: 0,
+		    minItems: 4,
+		    maxItems: 4,
+			asNavFor: '#feedback-slider', 
+		    start: function(slider){
+		        $("#feedback-thumbs").resize();
+		    }
+		});
+		$('#feedback-slider').flexslider({
+		    animation: "fade",
+		    animationSpeed: 500,
+		    slideshow: false,
+		    animationLoop: false,
+		    smoothHeight: false,
+			controlNav: false,
+		    sync: "#feedback-thumbs",
+		});
+	}
+
+	
 
 	// Slider "About Us"
 	if ($('#aboutus').length > 0) {

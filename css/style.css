@@ -1299,14 +1299,14 @@ input:focus {
 	padding: 0;
 }
 .specials .special.special-first {
-	width: 48.66666%;
+	width: 47.3%;
 }
-.specials .special:nth-child(4n) {
+/* .specials .special:nth-child(4n) {
 	margin-right: 0;
 }
 .specials .special:nth-child(4n+1) {
 	clear: left;
-}
+} */
 .specials .special .special-link {
 	display: block;
     overflow: hidden;
@@ -1412,14 +1412,14 @@ input:focus {
 /*.specials .special .special-info .special-add:hover {
 	border-bottom: 2px solid transparent;
 }*/
-.specials .special .special-info:hover .special-price {
-	/*display: none;*/
+/* .specials .special .special-info:hover .special-price {
+	display: none;
 	opacity: 0;
-}
-.specials .special .special-info:hover del {
-	/*display: none;*/
+} */
+/* .specials .special .special-info:hover del {
+	/*display: none;
 	opacity: 0;
-}
+} */
 .specials .special .special-info:hover .special-add {
 	/*display: block;*/
 	opacity: 1;
@@ -3111,7 +3111,7 @@ ul.pager li.dots a {
 	left: 0;
 	padding: 0 0 97px;
 	float: left;
-	width: 40%;
+	width: 100%;
 	overflow: hidden;
 	border-right: 1px solid #e0e4f6;
 }

@@ -75,3 +75,85 @@
 	left: unset;
 }
 .aboutus .flex-control-nav{text-align: left;}
+
+.prod-tabs li {
+	float: right;
+	margin: 0 0 0 59px;
+	font-size: 15px;
+	position: relative;
+}
+
+.prod-tabs {
+    overflow: hidden;
+    padding: 0 0 0 80px;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.side-socials{
+	border: 1px solid #18202e;
+	border-right: 0	;
+padding: 10px;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	border-radius: 20px  0 0 20px;
+	z-index: 10000000000;
+	background: #18202e;
+}
+
+.side-socials a{
+padding: 10px;
+text-decoration: none;
+}
+.whatsapp{
+	color: #25d366;
+}
+.facebook{
+	color: #1877f2;
+}
+.insta{
+	color: #bc2a8d;
+}
+.youtube{
+	color: #ff0000;
+}
+.call{
+	color: #1877f2;
+}
+
+#scroll-to-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #ff3100;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px ;
+	cursor: pointer;
+	z-index: 10000000000;
+
+}
+
+
+@media only screen and (max-width: 991px){
+	.side-socials{
+
+		margin: 0;
+		padding: 0;
+	}
+	.side-socials a {
+		font: 1em;
+		}
+.side-socials a i{
+font-size: 1em;
+}
+.row{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+}

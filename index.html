@@ -9,8 +9,14 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<link
+rel="stylesheet"
+href="plugins/bootstrap-5/css/bootstrap.rtl.min.css"
+/>
+<link
+rel="stylesheet"
+href="plugins/fontawesome-free-6/css/all.min.css"
+/>
 <link rel="stylesheet" href="css/zabuto_calendar.css">
 <link rel="stylesheet" href="css/flexslider.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -155,35 +161,9 @@
 
 
 <!-- Frontpage Slider -->
-<div class="frontslider-wrap">
-	<div class="responisve-container">
-		<div class="slider" id="front-slider">
-			<div class="slide">
-				<img 	src="img/front-slider/1.png"
-						data-position="45,430" data-in="fade" data-delay="0" data-out="fade" alt="American Legends">
-				<p 		class="caption1"			
-						data-position="50,0" data-in="right" data-step="0" data-out="fade" data-delay="0">AMERICAN</p>
-				<p 		class="caption2" 	
-						data-position="150,0" data-in="right" data-step="0" data-out="fade" data-delay="0">LEGENDS</p>		
-			</div>
-			<div class="slide">
-				<img 	src="img/front-slider/2.png"
-						data-position="50,518" data-in="fade" data-delay="0" data-out="fade" alt="Legendary Bike">
-				<p 		class="caption1"			
-						data-position="50,0" data-in="right" data-step="0" data-out="fade" data-delay="0">OFFROAD</p>
-				<p 		class="caption2" 	
-						data-position="150,0" data-in="right" data-step="0" data-out="fade" data-delay="0">KING</p>	
-			</div>
-			<div class="slide">
-				<img 	src="img/front-slider/3.png"
-						data-position="21,480" data-in="fade" data-delay="0" data-out="fade" alt="Dream Car">
-				<p 		class="caption1"			
-						data-position="50,0" data-in="right" data-step="0" data-out="fade" data-delay="0">DREAM</p>
-				<p 		class="caption2" 	
-						data-position="150,0" data-in="right" data-step="0" data-out="fade" data-delay="0">CARS</p>	
-			</div>
-		</div>
-	</div>
+<div class="main-slide w-100 my-5">
+		<img src="img/racing-car-1.png" class="img-fluid" alt="">
+	
 </div>
 
 
@@ -256,9 +236,33 @@
 </ul>
 </div>
 
+<div class="cont maincont" style="margin-top: 40px;">
+	<h1><span>About us</span></h1>
+	<span class="maincont-line1 maincont-line12"></span>
+	<span class="maincont-line2 maincont-line22"></span>
+
+	<!-- Slider About us - start -->
+	<div class="flexslider pagecont aboutus" id="aboutus">
+		<ul class="slides">
+			<li class="aboutus-slide">
+				<p class="aboutus-img">
+					<img src="http://placehold.it/470x400" alt="">
+				</p>
+				<div class="aboutus-cont">
+					<h3>Suspendisse convallis, dolor ac eleifend faucibus, arcu massa pellentesque justo</h3>
+					<p>Nullam quis tempor ligula, nec ornare dui. Sed fermentum magna ipsum, sit amet malesuada ante pretium in. Maecenas hendrerit purus tincidunt feugiat iaculis. Nunc facilisis id nunc blandit interdum. Sed convallis vel enim sit amet dictum. Donec tincidunt dolor semper fermentum lacinia. Morbi dolor ex, rhoncus quis nibh in, porta facilisis metus. Donec pulvinar bibendum lobortis. Vivamus consequat eros sit amet lorem tristique, sit amet viverra dolor maximus. Proin est nisi, ornare eu gravida eget, fringilla sit amet augue. Morbi arcu ante, vestibulum ac metus sed, commodo sollicitudin ligula. Duis justo massa, rutrum vel lectus sit amet, cursus pretium nulla.</p>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+	<!-- Slider About us - end -->
+
+</div>	
+
 
 <!-- Frontpage Filter -->
-<div class="frontsearch-wrap">
+<!-- <div class="frontsearch-wrap">
 	<div class="cont frontsearch">
 		<h2>Search</h2>
 		<p class="frontsearch-count">21900 ITEMS</p>
@@ -412,7 +416,7 @@
 		<span class="frontsearch-line1"></span>
 		<span class="frontsearch-line2"></span>
 	</div>
-</div>
+</div> -->
 
 
 
@@ -421,15 +425,15 @@
 <div class="specials-wrap">
 	<div class="cont specials">
 		<h2>Special Deals</h2>
-		<p class="specials-count">350 ITEMS</p>
 		<div class="specials-list">
 			<div class="special special-pseudo">
 				<a href="#" class="special-link"></a>
 			</div>
 			<div class="special special-first">
 				<a href="product.html" class="special-link">
+
 					<p class="special-img">
-						<img src="img/spec1.jpg" alt="">
+						<img src="img/front-categories/frcateg2.png" alt="">
 					</p>
 					<h3><span>Nulla lacinia lectus</span></h3>
 				</a>
@@ -437,10 +441,53 @@
 					<a href="#" class="special-categ">Suspensions</a>
 					<span class="special-price">$200</span>
 					<del>$400</del>
-					<a href="#" class="special-add">+ Add to cart</a>
+					
 				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
 			</div>
-			<div class="special">
+
+			<div class="special special-first">
+				<a href="product.html" class="special-link">
+					<p class="special-img">
+						<img src="img/front-categories/frcateg2.png" alt="">
+					</p>
+					<h3><span>Nulla lacinia lectus</span></h3>
+				</a>
+				<p class="special-info">
+					<a href="#" class="special-categ">Suspensions</a>
+					<span class="special-price">$200</span>
+					<del>$400</del>
+					
+				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
+			</div>
+
+			<div class="special special-first">
+				<a href="product.html" class="special-link">
+					<p class="special-img">
+						<img src="img/front-categories/frcateg2.png" alt="">
+					</p>
+					<h3><span>Nulla lacinia lectus</span></h3>
+				</a>
+				<p class="special-info">
+					<a href="#" class="special-categ">Suspensions</a>
+					<span class="special-price">$200</span>
+					<del>$400</del>
+					
+				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
+				
+			</div>
+			<div class="special special-first">
 				<a href="product.html" class="special-link">
 					<p class="special-img">
 						<img src="img/spec2.jpg" alt="">
@@ -450,10 +497,14 @@
 				<p class="special-info">
 					<a href="#" class="special-categ">Brakes</a>
 					<span class="special-price">$312</span>
-					<a href="#" class="special-add">+ Add to cart</a>
+					
 				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
 			</div>
-			<div class="special">
+			<div class="special special-first">
 				<a href="product.html" class="special-link">
 					<p class="special-img">
 						<img src="img/spec3.jpg" alt="">
@@ -463,10 +514,14 @@
 				<p class="special-info">
 					<a href="#" class="special-categ">Gauges</a>
 					<span class="special-price">$230.50</span>
-					<a href="#" class="special-add">+ Add to cart</a>
+					
 				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
 			</div>
-			<div class="special">
+			<div class="special special-first">
 				<a href="product.html" class="special-link">
 					<p class="special-img">
 						<img src="img/spec4.jpg" alt="">
@@ -476,10 +531,14 @@
 				<p class="special-info">
 					<a href="#" class="special-categ">Filters</a>
 					<span class="special-price">$1290</span>
-					<a href="#" class="special-add">+ Add to cart</a>
+					
 				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
 			</div>
-			<div class="special">
+			<div class="special special-first">
 				<a href="product.html" class="special-link">
 					<p class="special-img">
 						<img src="img/spec5.jpg" alt="">
@@ -489,10 +548,14 @@
 				<p class="special-info">
 					<a href="#" class="special-categ">Sprockets</a>
 					<span class="special-price">$1180</span>
-					<a href="#" class="special-add">+ Add to cart</a>
+					
 				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
 			</div>
-			<div class="special">
+			<div class="special special-first">
 				<a href="product.html" class="special-link">
 					<p class="special-img">
 						<img src="img/spec6.jpg" alt="">
@@ -502,10 +565,14 @@
 				<p class="special-info">
 					<a href="#" class="special-categ">Spark Plugs</a>
 					<span class="special-price">$305</span>
-					<a href="#" class="special-add">+ Add to cart</a>
+					
 				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
 			</div>
-			<div class="special">
+			<div class="special special-first">
 				<a href="product.html" class="special-link">
 					<p class="special-img">
 						<img src="img/spec7.jpg" alt="">
@@ -515,13 +582,15 @@
 				<p class="special-info">
 					<a href="#" class="special-categ">Springs</a>
 					<span class="special-price">$230.30</span>
-					<a href="#" class="special-add">+ Add to cart</a>
+					
 				</p>
+				<div class="d-flex align-items-center justify-content-center gap-5 mb-3">
+					<a href="" class="call"><i class="fa-solid fa-3x fa-phone"></i></a>
+					<a href="" class="whatsapp"><i class="fa-brands fa-3x fa-whatsapp"></i></a>
+				</div>
 			</div>
 		</div>
-		<p class="special-more">
-			<a href="#">show more</a>
-		</p>
+		
 		<span class="special-line1"></span>
 		<span class="special-line2"></span>
 	</div>
@@ -530,7 +599,7 @@
 
 
 <!-- Get a Special Deals -->
-<div class="getspec-wrap">
+<!-- <div class="getspec-wrap">
 	<div class="cont getspec">
 		<div class="getspec-cont">
 			<h3>Winter is coming</h3>
@@ -544,12 +613,12 @@
 			<img src="img/getspec.jpg" alt="">
 		</a>
 	</div>
-</div>
+</div> -->
 
 
 
 <!-- Popular Items -->
-<div class="populars-wrap">
+<!-- <div class="populars-wrap">
 	<div class="cont populars">
 		<h2>Popular</h2>
 		<p class="populars-count">7 ITEMS</p>
@@ -665,7 +734,7 @@
 		<span class="popular-line1"></span>
 		<span class="popular-line2"></span>
 	</div>
-</div>
+</div> -->
 
 
 <!-- Frontpage Article -->
@@ -681,10 +750,103 @@
 		</a>
 	</div>
 </div>
+<div class="cont maincont">
+	<div class="prod">
+		<div class="prod-slider-wrap">
+		  <div class="flexslider prod-slider" id="feedback-slider">
+			<ul class="slides">
+			  <li>
+				<!-- <a> & <img> Without Spaces -->
+				<a
+				  data-fancybox-group="feedback"
+				  class="fancy-img"
+				  href="img/logo.png"
+				  ><img src="http://placehold.it/373x327" alt=""
+				/></a>
+			  </li>
+			  <li>
+				<!-- <a> & <img> Without Spaces -->
+				<a
+				  data-fancybox-group="feedback"
+				  class="fancy-img"
+				  href="img/logo.png"
+				  ><img src="http://placehold.it/343x405" alt=""
+				/></a>
+			  </li>
+			  <li>
+				<!-- <a> & <img> Without Spaces -->
+				<a
+				  data-fancybox-group="feedback"
+				  class="fancy-img"
+				  href="img/logo.png"
+				  ><img src="http://placehold.it/285x367" alt=""
+				/></a>
+			  </li>
+			  <li>
+				<!-- <a> & <img> Without Spaces -->
+				<a
+				  data-fancybox-group="feedback"
+				  class="fancy-img"
+				  href="img/logo.png"
+				  ><img src="http://placehold.it/284x260" alt=""
+				/></a>
+			  </li>
+			  <li>
+				<!-- <a> & <img> Without Spaces -->
+				<a
+				  data-fancybox-group="prod"
+				  class="fancy-img"
+				  href="img/logo.png"
+				  ><img src="http://placehold.it/600x400" alt=""
+				/></a>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="flexslider prod-thumbs" id="feedback-slider">
+			<ul class="slides">
+			  <li>
+				<img src="http://placehold.it/373x327" alt="" />
+			  </li>
+			  <li>
+				<img src="http://placehold.it/343x405" alt="" />
+			  </li>
+			  <li>
+				<img src="http://placehold.it/285x367" alt="" />
+			  </li>
+			  <li>
+				<img src="http://placehold.it/284x260" alt="" />
+			  </li>
+			  <li>
+				<img src="http://placehold.it/600x400" alt="" />
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+</div>
+
+
 
 
 </main>
 <!-- Main Content - end -->
+
+<div id="scroll-to-top"><i class="fa-solid fa-2x fa-arrow-up"></i></div>
+
+<div class="side-socials">
+
+<div class="d-flex flex-column">
+	<a href="" class="whatsapp"><i class="fa-brands fa-2x fa-whatsapp "></i></a>
+	<a href="" class="facebook"><i class="fa-brands fa-2x fa-facebook"></i></a>
+	<a href="" class="insta"><i class="fa-brands fa-2x fa-instagram"></i></a>
+	<a href="" class="youtube"><i class="fa-brands fa-2x fa-youtube"></i></a>
+	
+	
+</div>
+
+
+</div>
+
 
 
 <!-- Footer - start -->
